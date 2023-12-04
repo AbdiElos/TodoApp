@@ -1,0 +1,36 @@
+body {
+    min-width: 60%;
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    background-color: rgb(233, 125, 17);
+    padding: 2%
+}
+
+h1 {
+    color: rgb(0, 128, 6);
+}
+
+#task {
+    padding: 2% 5%;
+    border-color: rgb(201, 51, 13);
+    font-size: larger;
+}
+
+#submit {
+    padding: 2% 5%;
+    border-color: rgb(2, 134, 2);
+    background-color: rgb(0, 128, 53);
+    color: rgb(221, 22, 22);
+}
+
+.ongoing {
+    color: rgb(0, 128, 17);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}

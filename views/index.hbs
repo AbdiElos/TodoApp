@@ -1,0 +1,21 @@
+<div class="container">
+   <h1>Karoora Guyyuu</h1>
+   <h2>Waan hoojjechuuf yaadde Barreeffadhu!</h2>
+   <form method="POST" action="/" >
+      <input type="text" name="task" id="task" required>
+      <button type="submit" id="submit">kuusi</button>
+   </form>
+   <div id="tasks_container">
+      <ul>
+         {{#each items}}
+         {{#if (isCompleted status)}}
+         <li class="completed">{{task}}</li>
+         <a href="/{{task_id}}"><i class="fa fa-trash"></i></a><a href="/ongoing/{{task_id}}">Booda hoojjechuuf milikkiteessi</a>
+         {{else}}    
+         <li class="ongoing">{{task}}</li>
+         <a href="/{{task_id}}"><i class="fa fa-trash"></i></a><a href="/completed/{{task_id}}">Dhumuusaa milikkiteessi</a>
+         {{/if}}
+         {{/each}}
+      </ul>
+   </div>
+</div>
